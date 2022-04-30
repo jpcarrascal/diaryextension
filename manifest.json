@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Test extension",
+  "name": "Diary browser extension",
   "version": "1.0",
   "description": "Testing...",
   "icons": {
@@ -9,7 +9,11 @@
   "content_scripts": [
     {
       "matches": ["https://www.domestika.org/*"],
-      "js": ["script.js"]
+      "js": ["prompt.js"]
+    },
+    {
+      "matches": ["https://docs.google.com/forms/d/e/1FAIpQLSdEOSZFOT_uu6B-z84lwEWMhqBKEbvUAKNIEimaYVt2VabfEQ/viewform*"],
+      "js": ["diary.js"]
     }
   ],
   "permissions": [

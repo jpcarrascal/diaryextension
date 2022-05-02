@@ -1,5 +1,7 @@
 # diaryextension
 
+**This README is still incomplete!**
+
 IMPORTANT: Make sure to include these two questions in your form:
 - DIARY-USERNAME: Will be used to automatically collect the participant's user name
 - DIARY-URL: Will collect the URL that was being visited when the participant decided to add a diary entry

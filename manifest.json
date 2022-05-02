@@ -8,10 +8,14 @@
   },
   "content_scripts": [
     {
+      // Replace this with the url to be monitored:
+      // Use * at the end to monitor multiple pages in domain:
       "matches": ["https://www.domestika.org/*"],
       "js": ["prompt.js"]
     },
     {
+      // Replace this the diary entry form URL.
+      // Make sure to include until "vieform". Remove anything else after that.
       "matches": ["https://docs.google.com/forms/d/e/1FAIpQLSdEOSZFOT_uu6B-z84lwEWMhqBKEbvUAKNIEimaYVt2VabfEQ/viewform*"],
       "js": ["diary.js"]
     }

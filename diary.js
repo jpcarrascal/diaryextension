@@ -2,11 +2,8 @@ window.onload = function() {
     console.log("Diary...")
     var username = findGetParameter("username");
     var url = findGetParameter("url");
-//    var intTs = findGetParameter("timestamp") || 0;
-//    var timestamp = new Date(parseInt(intTs)).toISOString();
     if(username) setInput("DIARY-USERNAME", username);
     if(url) setInput("DIARY-URL", url);
-
 }
 
 // From: https://stackoverflow.com/questions/5448545/how-to-retrieve-get-parameters-from-javascript

@@ -19,9 +19,7 @@ they will be redirected to your Google Form.
 The form will automatically store the participant's username and the URL they were visitng when they added the entry.
 
 ## Preparation and configuration:
-Create your diary form in Google Forms.
-
- **Important:** cake sure to include these two questions in your form:
+Create your diary form in Google Forms. **Important:** make sure to include these two questions in your form:
 - DIARY-USERNAME: Will be used to automatically collect the participant's user name
 - DIARY-URL: Will collect the URL that was being visited when the participant decided to add a diary entry
 _("DIARY-USERNAME" and "DIARY-URL" should be the question text.)_
@@ -38,10 +36,7 @@ Make sure to include everything until "vieform". _Remove anything else after tha
 3. In the _prompt.js_ file, change the contents of the `requestUsernameString`  and `requestEntryString` variables to your liking.
 These variable are the messages displayed when collecting the username and when asking the participant to add a diary entry.
 (tip: you can also change the language of these messages). Finally, the `secondsBeforePrompt`
-will determin how long (in seconds) after opening a page the participant will be asked to complete a diary entry.
-
-
-
+will determine how long (in seconds) after opening a page the participant will be asked to complete a diary entry.
 
 ## Installation:
 As this extension is not distributed through the Chrome store, study participants need to follow a different procedure.
@@ -49,18 +44,8 @@ It is explained here:
 https://stackoverflow.com/questions/24577024/install-chrome-extension-form-outside-the-chrome-web-store
 
 
-
-
-A prompt to complete a diary entry will be triggered `secondsBeforePrompt` seconds after starting the session.
-In their first session, prticipants will be asked to enter a username to identify them through the study.
-
 ## TODO:
 * Support for Firefox
 * Test on other chromium browsers (Edge), and Safari.
+* Implementing other trigger rules based in the number of visited pages, or nomber of times a specific page is visited
 
-* Implementing other trigger rules like:
-- Daily: after visiting N pages in domain
-- Per page: aftern N visits to the page
-
-- Domain-wide
-- Specific pages in domain
